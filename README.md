@@ -70,6 +70,7 @@ These engineered features improved cluster separability and interpretability.
 
 The optimal number of clusters was selected based on a balance between cohesion and separation.
 
+Optimial K selection: https://gist.github.com/KoketsoMangwale/84f56de1465cbc0e0f13abaf6f06baa6
 
 
 ## 📊 Results & Cluster Profiles
