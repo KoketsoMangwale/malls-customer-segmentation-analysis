@@ -67,8 +67,12 @@ These engineered features improved cluster separability and interpretability.
 
   * **Elbow Method (Inertia)**
   * **Silhouette Score**
+ 
+![Alt text](data/elbow_method.png)
 
-The optimal number of clusters was selected based on a balance between cohesion and separation.
+- The elbow plot shows a sharp decrease in inertia from k = 2 to k = 4, after which the rate of improvement slows noticeably.
+- This suggests an optimal number of clusters around k = 4 (possibly k = 5 as a secondary option), where adding more clusters yields diminishing returns in reducing SSE
+- The optimal number of clusters was selected based on a balance between cohesion and separation.
 
 ## Results & Cluster Profiles
 
