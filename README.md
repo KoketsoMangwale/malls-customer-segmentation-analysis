@@ -1,6 +1,6 @@
-# 🛍️ Malls Customer Segmentation Analysis
+# Malls Customer Segmentation Analysis
 
-## 📌 Project Overview
+## Project Overview
 
 This project performs an end-to-end customer segmentation analysis using the **Mall Customers Dataset**. The objective is to identify distinct customer groups based on demographic attributes and spending behavior, enabling data-driven marketing and business decision-making.
 
@@ -8,7 +8,7 @@ Unsupervised learning (K-Means clustering) is applied after thorough data explor
 
 
 
-## 🎯 Objectives
+## Objectives
 
 * Understand customer demographics and spending patterns
 * Engineer meaningful features to enhance clustering performance
@@ -18,7 +18,7 @@ Unsupervised learning (K-Means clustering) is applied after thorough data explor
 
 
 
-## 📂 Dataset Description
+## Dataset Description
 
 The dataset contains information about mall customers, including:
 
@@ -59,7 +59,7 @@ These engineered features improved cluster separability and interpretability.
 
 
 
-## 🤖 Clustering Methodology
+## Clustering Methodology
 
 * Applied **K-Means clustering** on scaled numerical features
 * Tested multiple values of *k*
@@ -70,7 +70,7 @@ These engineered features improved cluster separability and interpretability.
 
 The optimal number of clusters was selected based on a balance between cohesion and separation.
 
-## 📊 Results & Cluster Profiles
+## Results & Cluster Profiles
 
 The analysis revealed distinct customer segments such as:
 
@@ -108,7 +108,7 @@ Each cluster was profiled using mean age, income, and spending score.
 
 Optimial K selection: https://gist.github.com/KoketsoMangwale/84f56de1465cbc0e0f13abaf6f06baa6
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 * Experiment with alternative clustering algorithms (DBSCAN, Hierarchical)
 * Incorporate additional behavioral data
