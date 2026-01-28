@@ -79,8 +79,8 @@ These engineered features improved cluster separability and interpretability.
 
 - **Clustering Justification:**  
   A detailed justification covering the grouping method, assumptions, and applicability to future customers is documented here:  
-  👉 **K-Means Clustering Justification (GitHub Gist)**  
-  https://gist.github.com/<your-username>/<gist-id>
+  👉 **K-Means Clustering Justification (GitHub Gist)**  : https://gist.github.com/KoketsoMangwale/6d9340dc68161061be4f87b5b4d3d9e3
+   
 
 
 ## Results & Cluster Profiles
