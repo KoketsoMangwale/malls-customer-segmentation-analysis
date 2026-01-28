@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project performs an end-to-end customer segmentation analysis using the **Mall Customers Dataset**. The objective is to identify distinct customer groups based on demographic attributes and spending behavior, enabling data-driven marketing and business decision-making.
+This project performs an end-to-end customer segmentation analysis using the **Mall Customers Dataset**. The objective is to identify distinct customer groups based on demographic attributes and spending behaviour, enabling data-driven marketing and business decision-making.
 
 Unsupervised learning (K-Means clustering) is applied after thorough data exploration, preprocessing, and feature engineering to uncover meaningful customer segments.
 
@@ -30,7 +30,7 @@ The dataset contains information about mall customers, including:
 | Education              | Highest education level      |
 | Marital Status         | Marital status               |
 | Annual Income (k$)     | Annual income in thousands   |
-| Spending Score (1–100) | Mall spending behavior score |
+| Spending Score (1–100) | Mall spending behaviour score |
 
 
 
@@ -74,6 +74,15 @@ These engineered features improved cluster separability and interpretability.
 - This suggests an optimal number of clusters around k = 4 (possibly k = 5 as a secondary option), where adding more clusters yields diminishing returns in reducing SSE
 - The optimal number of clusters was selected based on a balance between cohesion and separation.
 
+- **Customer Segmentation Approach:**  
+  Mall customers were segmented using K-Means clustering based on age, income, and spending behaviour.
+
+- **Clustering Justification:**  
+  A detailed justification covering the grouping method, assumptions, and applicability to future customers is documented here:  
+  👉 **K-Means Clustering Justification (GitHub Gist)**  
+  https://gist.github.com/<your-username>/<gist-id>
+
+
 ## Results & Cluster Profiles
 
 The analysis revealed distinct customer segments such as:
@@ -81,7 +90,7 @@ The analysis revealed distinct customer segments such as:
 * High-income, high-spending customers
 * Budget-conscious customers with low spending scores
 * Young customers with high engagement potential
-* Older customers with stable but moderate spending behavior
+* Older customers with stable but moderate spending behaviour
 
 Each cluster was profiled using mean age, income, and spending score.
 
@@ -112,10 +121,11 @@ Each cluster was profiled using mean age, income, and spending score.
 
 Optimial K selection: https://gist.github.com/KoketsoMangwale/84f56de1465cbc0e0f13abaf6f06baa6
 
+
 ##  Future Improvements
 
 * Experiment with alternative clustering algorithms (DBSCAN, Hierarchical)
-* Incorporate additional behavioral data
+* Incorporate additional behavioural data
 * Build an interactive dashboard for business users
 
 
