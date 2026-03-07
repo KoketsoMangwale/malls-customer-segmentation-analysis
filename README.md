@@ -38,10 +38,10 @@ The dataset contains information about mall customers, including:
 
 * **Python**
 * **Pandas & NumPy** – Data manipulation
-* **Matplotlib & Seaborn** – Data visualization
+* **Matplotlib & Seaborn** – Data visualisation
 * **Scikit-learn** – Feature scaling and K-Means clustering
 * **Jupyter Notebook** – Interactive analysis
-
+* **PowerBI** – Interactive data visualisation
 
 
 ## 🧹 Data Preparation & Feature Engineering
@@ -58,8 +58,7 @@ Key preprocessing steps included:
 These engineered features improved cluster separability and interpretability.
 
 
-
-## Clustering Methodology
+## Clustering Methodology: Finding the "Golden K"
 
 * Applied **K-Means clustering** on scaled numerical features
 * Tested multiple values of *k*
