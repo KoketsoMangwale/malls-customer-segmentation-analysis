@@ -4,19 +4,14 @@
 
 This project performs an end-to-end customer segmentation analysis using the **Mall Customers Dataset**. The objective is to identify distinct customer groups based on demographic attributes and spending behaviour, enabling data-driven marketing and business decision-making.
 
-Unsupervised learning (K-Means clustering) is applied after thorough data exploration, preprocessing, and feature engineering to uncover meaningful customer segments.
-
-
+Unsupervised learning (K-Means clustering) is applied and PowerBI is used after thorough data exploration, preprocessing, and feature engineering to uncover hidden patterns in consumer behaviour to drive targeted marketing strategies.
 
 ## Objectives
 
 * Understand customer demographics and spending patterns
-* Engineer meaningful features to enhance clustering performance
 * Segment customers using K-Means clustering
-* Evaluate the optimal number of clusters using inertia and silhouette score
-* Translate analytical findings into actionable business insights
-
-
+* Evaluate cluster validity using Inertia and Silhouette scores
+* Translate clusters into high-value business leads
 
 ## Dataset Description
 
@@ -32,26 +27,17 @@ The dataset contains information about mall customers, including:
 | Annual Income (k$)     | Annual income in thousands   |
 | Spending Score (1–100) | Mall spending behaviour score |
 
-
-
 ## 🔧 Tools & Technologies
 
-* **Python**
-* **Pandas & NumPy** – Data manipulation
-* **Matplotlib & Seaborn** – Data visualisation
-* **Scikit-learn** – Feature scaling and K-Means clustering
-* **Jupyter Notebook** – Interactive analysis
-* **PowerBI** – Interactive data visualisation
-
+* **Python** (Scikit-learn, Pandas, NumPy)
+* **Data visualisation** – Matplotlib, Seaborn, and **Power BI**
 
 ## 🧹 Data Preparation & Feature Engineering
 
 Key preprocessing steps included:
 
-* Handling categorical variables
-* Feature scaling using StandardScaler
-* Creating new ratio-based features:
-
+* **Feature Scaling:** Applied `StandardScaler` to ensure Income and Spending Score were weighted equally.
+* **New ratio-based** features:
   * **Income-to-Spending Ratio**
   * **Age-to-Income Ratio**
 
@@ -62,38 +48,35 @@ These engineered features improved cluster separability and interpretability.
 
 * Applied **K-Means clustering** on scaled numerical features
 * Tested multiple values of *k*
-* Evaluated performance using:
+* Selecting the number of clusters wasn't a guess—it was a mathematical conviction using:
 
-  * **Elbow Method (Inertia)**
-  * **Silhouette Score**
+  ### Elbow Method (Inertia)
+  * The Observation: The Inertia curve (SSE) showed a sharp decrease up to k=5, with a clear "Elbow" forming between 5 and 6.
+  * The Decision: Beyond k=6, the reduction in inertia became marginal (diminishing returns), confirming k=6 as the optimal balance between complexity and accuracy.
+
  
 ![Alt text](data/elbow_method.png)
 
-- The elbow plot shows a sharp decrease in inertia from k = 2 to k = 4, after which the rate of improvement slows noticeably.
-- This suggests an optimal number of clusters around k = 4 (possibly k = 5 as a secondary option), where adding more clusters yields diminishing returns in reducing SSE
-- The optimal number of clusters was selected based on a balance between cohesion and separation.
-
-- **Customer Segmentation Approach:**  
+  ### Silhouette Score
+   * I measured the structural separation of the clusters.
+  
+     * The Evidence: The Silhouette Score peaked at 0.4268 when k=6.
+     * The Verdict: This confirms that 6 clusters provide the most distinct and well-separated customer groups.
+  
+#### Customer Segmentation Approach:  
   Mall customers were segmented using K-Means clustering based on age, income, and spending behaviour.
 
-- **Clustering Justification:**  
+#### Clustering Justification:
   A detailed justification covering the grouping method, assumptions, and applicability to future customers is documented here:  
-  👉 **K-Means Clustering Justification (GitHub Gist)**  : https://gist.github.com/KoketsoMangwale/6d9340dc68161061be4f87b5b4d3d9e3
-   
-
+#### K-Means Clustering Justification (GitHub Gist)  : https://gist.github.com/KoketsoMangwale/6d9340dc68161061be4f87b5b4d3d9e3
 
 ## Results & Cluster Profiles
 
 The analysis revealed distinct customer segments such as:
 
-* High-income, high-spending customers
-* Budget-conscious customers with low spending scores
-* Young customers with high engagement potential
-* Older customers with stable but moderate spending behaviour
+![Alt text](data/cluster_profiles.png)
 
 Each cluster was profiled using mean age, income, and spending score.
-
-
 
 ## 💡 Business Insights & Recommendations
 
@@ -101,8 +84,6 @@ Each cluster was profiled using mean age, income, and spending score.
 * Use personalized promotions to convert mid-income, low-spending customers
 * Design engagement campaigns for younger customer segments
 * Optimize marketing spend by tailoring strategies to each segment
-
-
 
 ## 📁 Project Structure
 
@@ -127,14 +108,10 @@ Optimial K selection: https://gist.github.com/KoketsoMangwale/84f56de1465cbc0e0f
 * Incorporate additional behavioural data
 * Build an interactive dashboard for business users
 
-
-
 ## 👤 Author
 
 **Koketso**
 Data Analyst | Aspiring Data Scientist
-
-
 
 ## ⭐ Acknowledgements
 
