@@ -8,7 +8,7 @@ Unsupervised learning (K-Means clustering) is applied and PowerBI is used after 
 
 ## Objectives
 
-* Understand customer demographics and spending patterns
+* Understand customer demographics, socio-economics and spending patterns
 * Segment customers using K-Means clustering
 * Evaluate cluster validity using Inertia and Silhouette scores
 * Translate clusters into high-value business leads
